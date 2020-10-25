@@ -1,0 +1,14 @@
+{
+  "name": "jobhunter",
+  "authors": [
+    "'kumaresh' <'odkumaresh@gmail.com'>"
+  ],
+  "description": "\"Website for freelancers\"",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2"
+  }
+}

@@ -12,7 +12,7 @@ Job hunter is a website in which freelancers can register and get awesome job op
 
 #### Steps
 
-1. Make sure git installed in your system. If it is not installed, then [Download from here](https://git-scm.com/downloads).
+1. Make sure git installed in your system. If it is not installed, then [Download from here](https://git-scm.com/downloads).If node is not installed in your system, then [Download from here](https://nodejs.org/en/download/).
 2. Execute `git clone project link` in which location you want to create the project.
-3. Make sure your system connected with internet.(AngularJS cdn is used)
-4. Open the index.html file and you can able to see the website.
+3. Install dependencies using `bower install`.
+4. Open index.html file in browser to see the result.
