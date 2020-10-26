@@ -1,3 +1,19 @@
-<div>
-    Hello from freelancers
+<div ng-controller='freelancerShowController as showList'>
+    <ol>
+        <li ng-repeat="item in showList.items">
+            <div class="w3-container">
+                <div class="w3-card-4 w3-dark-grey" style="width:30%">
+                    <div class="w3-container">
+                    <h3 style="color:azure">{{item.name}}</h3>
+                    <h5 style="color:azure">I am a freelancer in {{item.free}}</h5>
+                    <h5 style="color:azure">For futher contact : {{item.Contact}}</h5>
+                    <div class="w3-section">
+                        <button class="w3-button w3-green">Hire</button>
+                        <button class="w3-button w3-red" ng-click="showList.removeItem($index);">Remove</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ol>
 </div>

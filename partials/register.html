@@ -1,3 +1,39 @@
-<div>
-    Hello from register!!
-</div>
+<div ng-controller='freelancerAddController as itemAdder'>
+ <div class="testbox">
+      <form>
+        <h1>Freelancer Registration</h1>
+        <div class="item" ng >
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" name="fname" placeholder="First" ng-model="itemAdder.itemName"/>
+            <input type="text" name="lname" placeholder="Last" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Contact Number </p>
+          <input type="text" name="name" ng-model="itemAdder.itemContact"/>
+        </div>
+        <div class="item">
+          <p>DOB</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>You are a Freelancer in : </p>
+          <input type="text" name="name" ng-model="itemAdder.itemfree"/>
+        </div>
+        <div class="item">
+          <p>A Short Bio about yourself </p>
+          <textarea rows="5"></textarea>
+        </div>
+        <div class="btn-block">
+          <button ng-click="itemAdder.addItem();">Register</button>
+        </div>
+      </form>
+ </div>
+ </div>
+ 
