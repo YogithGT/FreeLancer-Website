@@ -12,6 +12,6 @@ angular.module("jobHunterApp", [
 	when("/register", {templateUrl: "partials/register.html"}).
 	otherwise({redirectTo: '/'});
 }])
-    .controller("mainCtrl", function ($route) { 
-        $scope.$route = $route;
- })
+.controller("mainCtrl", function ($route) { 
+    $scope.$route = $route;
+ });
