@@ -1,17 +1,12 @@
 angular.module("jobHunterApp", [
-    "jobHunterApp.controllers",
-    "jobHunterApp.services",
-    "jobHunterApp.directives",
     "ngRoute"
 ])
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-	when("/", {templateUrl: "index.html"}).
-    when("/freelancers", { templateUrl: "partials/freelancer.html"}).
-	when("/recruiters", {templateUrl: "partials/recruiters.html"}).
-	when("/register", {templateUrl: "partials/register.html"}).
-	otherwise({redirectTo: '/'});
-}])
-.controller("mainCtrl", function ($route) { 
-    $scope.$route = $route;
- });
+.config(function ($routeProvider, $locationProvider) {
+        $routeProvider.
+            when("/", { templateUrl: "partials/home.html" }).
+            when("/freelancers", { templateUrl: "partials/freelancers.html" }).
+            when("/recruiters", { templateUrl: "partials/recruiters.html" }).
+            when("/register", { templateUrl: "partials/register.html" }).
+            otherwise({ redirectTo: '/' });
+        $locationProvider.html5Mode(true);
+});
