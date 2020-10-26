@@ -4,7 +4,7 @@ angular.module("jobHunterApp.services", [
 
 function freelancerService() {
     var service = this;
-    var items = [];
+    var items = [{ name : "Kumaresh", Contact : "1234567890", free : "Tech"}];
     service.addItem = function (itemName, Contact, free){
         var item = {
             name: itemName,

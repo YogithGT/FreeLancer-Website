@@ -1,5 +1,4 @@
 angular.module("jobHunterApp.controllers", [
-    "jobHunterApp.services",
 ])
     .controller('freelancerAddController', freelancerAddController)
     .controller('freelancerShowController', freelancerShowController);
@@ -17,7 +16,8 @@ function freelancerAddController($location, freelancerService){
     }
 }
             
-freelancerShowController.$inject=['freelancerService'];
+freelancerShowController.$inject = ['freelancerService'];
+console.log(freelancerService);
 function freelancerShowController(freelancerService){
     var showList=this;
     showList.items=freelancerService.getItems();

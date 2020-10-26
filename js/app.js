@@ -1,4 +1,7 @@
 angular.module("jobHunterApp", [
+    "jobHunterApp.services",
+    "jobHunterApp.directives",
+    "jobHunterApp.controllers",
     "ngRoute"
 ])
 .config(function ($routeProvider, $locationProvider) {
